@@ -2,9 +2,66 @@
   <div>
 
     <footer-head/>
-    <div>
+    
+    <div class="footer-main">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div class="d-flex link-list">
 
+          <div class="link-container">
+            <span>DC COMICS</span>
+            <ul>
+              <li>Characters</li>
+              <li>Comics</li>
+              <li>Movies</li>
+              <li>TV</li>
+              <li>Games</li>
+              <li>Videos</li>
+              <li>News</li>
+            </ul>
+              <br><br>
+            <span>SHOP</span>
+            <ul>
+              <li>Shop DC</li>
+              <li>Shop DC Collectibles</li>
+            </ul>
+          </div>
+
+          <div class="link-container">
+            <span>DC</span>
+            <ul>
+              <li>Terms Of Use</li>
+              <li>Privacy policy (New)</li>
+              <li>Ad Choice</li>
+              <li>Advertising</li>
+              <li>Jobs</li>
+              <li>Subscription</li>
+              <li>Talent Workshop</li>
+              <li>CPSC Certificates</li>
+              <li>Rating</li>
+              <li>Shop Help</li>
+              <li>Contact Us</li>
+            </ul>
+          </div>
+
+          <div class="link-container">
+            <span>SITES</span>
+            <ul>
+              <li>DC</li>
+              <li>MAD Magazine</li>
+              <li>DC Kids</li>
+              <li>DC Universe</li>
+              <li>DC Power Visa</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="big-logo">
+          <img src="../assets/images/dc-logo-bg.png">
+        </div>
+      </div>      
     </div>
+    
     <div class="footer-bottom">
       <div class="container d-flex justify-content-between align-items-center footer-bottom-container">
 
@@ -60,9 +117,11 @@ export default {
 @import '../style/variables';
 @import '../style/general';
 
+
 .footer-bottom{
   height: 85px;
   background-color: rgb(51, 51, 51);
+  min-width: 992px;
 }
 .footer-bottom-container{
   height: 100%;
@@ -91,6 +150,40 @@ export default {
         width: 30px;
       }
     }
+  }
+}
+
+
+.footer-main{
+  background-image: url(../assets/images/footer-bg.jpg);
+  background-size: cover;
+  min-width: 992px;
+  .link-list{
+    padding: 30px;
+
+    .link-container{
+      padding: 20px;
+
+      span{
+        color: white;
+        font-size: $font-large;
+      }
+
+      ul{
+        padding-top: 12px;
+        li{
+          list-style: none;
+          padding: 5px 0;
+          color: grey;
+        }
+      }
+    }
+  }
+
+  .big-logo{
+    img{
+      width: 500px;
+      }
   }
 }
 </style>

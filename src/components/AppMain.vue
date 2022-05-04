@@ -23,6 +23,7 @@ export default {
 .main-container{
   background-color: $dark;
   padding: 30px 0;
+  min-width: 992px;
   span{
     color: white;
     font-size: $font-large;

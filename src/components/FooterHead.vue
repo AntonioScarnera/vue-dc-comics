@@ -56,6 +56,7 @@ export default {
 .footerHead-container{
     background-color: $color-azzurro;
     color: white;
+      min-width: 992px;
         ul{
             padding: 40px 0;
             list-style: none;
