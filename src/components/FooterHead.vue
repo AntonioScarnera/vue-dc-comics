@@ -75,6 +75,9 @@ export default {
                 }
                 span{
                   font-size: $font-small;
+                  &:hover{
+                        cursor: pointer;
+                    }
                 }
                 
             }

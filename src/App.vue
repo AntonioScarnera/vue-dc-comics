@@ -28,4 +28,8 @@ export default {
 <style lang="scss">
 @import './style/variables';
 @import './style/general';
+
+ul li{
+  cursor: pointer;
+}
 </style>
